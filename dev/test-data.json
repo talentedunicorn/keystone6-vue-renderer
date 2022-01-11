@@ -1,0 +1,226 @@
+[{
+  "type": "heading",
+  "level": 3,
+  "children": [
+    {
+      "text": "Document example"
+    }
+  ]
+},
+{
+  "type": "paragraph",
+  "children": [
+    {
+      "text": "Keystone6 document has "
+    },
+    {
+      "text": "support",
+      "underline": true
+    },
+    {
+      "text": " for paragraphs, "
+    },
+    {
+      "text": "strikethrough",
+      "strikethrough": true
+    },
+    {
+      "text": ", "
+    },
+    {
+      "code": true,
+      "text": "code"
+    },
+    {
+      "text": ", "
+    },
+    {
+      "text": "italics",
+      "italic": true
+    },
+    {
+      "text": ", "
+    },
+    {
+      "bold": true,
+      "text": "bold"
+    },
+    {
+      "text": " and even "
+    },
+    {
+      "href": "https://talentedunicorn.com",
+      "type": "link",
+      "children": [
+        {
+          "text": "links"
+        }
+      ]
+    },
+    {
+      "text": "."
+    }
+  ]
+},
+{
+  "type": "blockquote",
+  "children": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Blockquotes support"
+        }
+      ]
+    }
+  ]
+},
+{
+  "type": "heading",
+  "level": 4,
+  "children": [
+    {
+      "text": "Lists"
+    }
+  ]
+},
+{
+  "type": "heading",
+  "level": 5,
+  "children": [
+    {
+      "text": "Unordered list"
+    }
+  ]
+},
+{
+  "type": "unordered-list",
+  "children": [
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "One"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "Two"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "Three"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  "type": "heading",
+  "level": 5,
+  "children": [
+    {
+      "text": "Ordered list"
+    }
+  ]
+},
+{
+  "type": "ordered-list",
+  "children": [
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "Satu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "Dua"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "Tiga"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "Empat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list-item",
+      "children": [
+        {
+          "type": "list-item-content",
+          "children": [
+            {
+              "text": "Lima"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  "type": "code",
+  "children": [
+    {
+      "text": "Support for code blocks\n\nfunction hello() {\n  return world\n}"
+    }
+  ]
+}]
