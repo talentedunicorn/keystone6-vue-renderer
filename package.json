@@ -1,7 +1,8 @@
 {
   "name": "keystone6-vue-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keystone6 document field renderer for VueJs",
+  "homepage": "https://github.com/talentedunicorn/keystone6-vue-renderer",
   "main": "dist/keystone6-vue-renderer.ssr.js",
   "browser": "dist/keystone6-vue-renderer.esm.js",
   "module": "dist/keystone6-vue-renderer.esm.js",
@@ -11,9 +12,9 @@
     "dist/*",
     "src/**/*.vue"
   ],
-  "sideEffects": false,
   "scripts": {
     "dev": "vue-cli-service serve dev/serve.ts",
+    "build:dev": "vue-cli-service build --dest preview dev/serve.ts",
     "prebuild": "rimraf ./dist",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
