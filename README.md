@@ -48,3 +48,9 @@ export default ({
   <Document :document="document" />
 </template>
 ```
+
+## Run development server
+```
+npm run dev
+
+```

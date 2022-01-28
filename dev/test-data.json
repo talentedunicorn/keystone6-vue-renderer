@@ -3,7 +3,7 @@
   "level": 3,
   "children": [
     {
-      "text": "Document example"
+      "text": "Supported formats"
     }
   ]
 },
@@ -11,14 +11,14 @@
   "type": "paragraph",
   "children": [
     {
-      "text": "Keystone6 document has "
+      "text": "Keystone6VueRenderer has support for; "
     },
     {
-      "text": "support",
+      "text": "underlines",
       "underline": true
     },
     {
-      "text": " for paragraphs, "
+      "text": ", "
     },
     {
       "text": "strikethrough",
@@ -46,7 +46,7 @@
       "text": "bold"
     },
     {
-      "text": " and even "
+      "text": ", "
     },
     {
       "href": "https://talentedunicorn.com",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "text": "."
+      "text": " as well as..."
     }
   ]
 },
