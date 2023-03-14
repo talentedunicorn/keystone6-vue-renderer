@@ -1,12 +1,9 @@
 <script lang="ts">
-import Vue from "vue";
-import { Fragment } from "vue-fragment";
 import Paragraph from "./paragraph.vue";
 import IDocItem from "../@types/document";
-export default Vue.extend({
+export default {
   name: "Document",
   components: {
-    Fragment,
     Paragraph,
   },
   props: {
@@ -15,21 +12,21 @@ export default Vue.extend({
       required: true,
     },
   },
-});
+};
 </script>
 
 <template>
   <div>
-    <fragment v-for="(block, index) in document" :key="index">
+    <template v-for="(block, index) in document" :key="index">
       <template v-if="block.type === 'paragraph'">
         <Paragraph :block="block" />
       </template>
 
       <template v-if="block.type === 'blockquote'">
         <blockquote>
-          <fragment v-for="(content, index) in block.children" :key="index">
-            <Paragraph :block="content" />
-          </fragment>
+          <template v-for="(content, index) in block.children" :key="index">
+            <Paragraph :block="content as unknown as IDocItem" />
+          </template>
         </blockquote>
       </template>
 
@@ -58,7 +55,11 @@ export default Vue.extend({
       <template v-if="block.type === 'unordered-list'">
         <ul>
           <li v-for="(item, index) in block.children" :key="index">
-            {{ item.children[0].children[0].text }}
+            <template v-if="item.children">
+              <template v-if="item.children[0].children">
+                {{ item.children[0].children[0].text }}
+              </template>
+            </template>
           </li>
         </ul>
       </template>
@@ -66,10 +67,14 @@ export default Vue.extend({
       <template v-if="block.type === 'ordered-list'">
         <ol>
           <li v-for="(item, index) in block.children" :key="index">
-            {{ item.children[0].children[0].text }}
+            <template v-if="item.children">
+              <template v-if="item.children[0].children">
+                {{ item.children[0].children[0].text }}
+              </template>
+            </template>
           </li>
         </ol>
       </template>
-    </fragment>
+    </template>
   </div>
 </template>
