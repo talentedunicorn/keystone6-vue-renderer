@@ -1,5 +1,5 @@
 <script lang="ts">
-import Paragraph from "./paragraph.vue";
+import Paragraph from "./Paragraph.vue";
 import IDocItem from "../@types/document";
 export default {
   name: "Document",
